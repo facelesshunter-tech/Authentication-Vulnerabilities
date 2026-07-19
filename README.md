@@ -15,7 +15,7 @@ My full authentication notes cover the fundamentals, the complete OWASP
 authentication testing methodology, and modern 2026 attacks (token theft,
 AiTM phishing, consent phishing, and more).
 
-- [Read the notes](./NOTES.md)
+- [Read the notes](./notes/Note.md)
 - [Download the PDF](./notes/Authentication_Notes.pdf)
 
 ---
