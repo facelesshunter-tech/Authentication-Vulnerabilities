@@ -5,7 +5,7 @@
 **Difficulty:** Apprentice
 **Platform:** PortSwigger Web Security Academy
 
-![Lab Image](images/img4.png)
+![Lab Image](images/img1.png)
 
 ---
 
