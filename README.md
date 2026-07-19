@@ -1,6 +1,6 @@
 # Authentication Vulnerabilities
 
-A complete, hands-on study of authentication vulnerabilities — combining
+A complete, hands-on study of authentication vulnerabilities, combining
 detailed personal notes with worked solutions to every authentication lab
 in the PortSwigger Web Security Academy.
 
