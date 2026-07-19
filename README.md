@@ -25,6 +25,7 @@ AiTM phishing, consent phishing, and more).
 | # | Lab | Difficulty | Vulnerability |
 |---|-----|-----------|---------------|
 | 01 | [Username enumeration via different responses](./labs/01-username-enumeration-different-responses) | Apprentice | Username enumeration |
+| 05 | [Username enumeration via response timing](./labs/05_username-enumeration-via-response-timing) | PRACTITIONER | Username enumeration |
 
 _More labs added as they are completed._
 

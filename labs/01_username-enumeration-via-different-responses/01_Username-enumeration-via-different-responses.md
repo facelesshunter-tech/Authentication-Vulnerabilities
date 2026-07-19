@@ -5,7 +5,7 @@
 **Difficulty:** Apprentice
 **Platform:** PortSwigger Web Security Academy
 
-![Lab Image](images/img4.png)
+![Lab Image](images/img1.png)
 
 ---
 
@@ -40,37 +40,37 @@ This lab demonstrates a **username enumeration** vulnerability caused by the app
 
 Burp Suite was configured as an intercepting proxy with all traffic routed through it. The target lab domain was added to **Target > Scope** to keep the workspace focused and filter out unrelated noise.
 
-![Burp scope configuration](images/Screenshot From 2026-07-12 22-46-37.png)
+![Burp scope configuration](images/img2.png)
 
 ### 2. Application Mapping
 
 The lab was accessed and the authentication surface identified. A standard login form was present, exposing two input parameters: `username` and `password`.
 
-![Screenshot: Lab login page](images/Screenshot From 2026-07-12 22-46-31.png)
+![Screenshot: Lab login page](images/img3.png)
 
 ### 3. Username Enumeration
 
 A login attempt was submitted and the resulting `POST /login` request captured and sent to **Burp Intruder**. Using the **Sniper** attack type, a single payload position was set on the `username` parameter, and the candidate username wordlist was loaded.
 
-![Intruder positions configured on username field](images/Screenshot From 2026-07-12 22-46-37.png)
+![Intruder positions configured on username field](images/img2.png)
 
 ### 4. Identifying the Valid Username
 
 The attack was executed and results sorted by **response length**. One payload produced a response with a length that deviated from all others. Cross-referencing this against the **Response** tab confirmed the difference: invalid usernames returned one error message, while the valid username returned a different response indicating the account existed.
 
-![Intruder results showing the anomalous response length](images/Screenshot From 2026-07-12 22-59-16.png)
+![Intruder results showing the anomalous response length](images/img4.png)
 
 ### 5. Password Brute-Force
 
 With the valid username identified, a second Intruder attack was configured. The `username` parameter was fixed to the confirmed value, the payload position was moved to the `password` parameter, and the candidate password wordlist was loaded. The attack was run and results were again analysed by status code and response length.
 
-![Intruder configured for password brute-force](images/Screenshot From 2026-07-12 23-12-43.png)
+![Intruder configured for password brute-force](images/img5.png)
 
 ### 6. Successful Authentication
 
 The correct password produced a distinct response — a `302` redirect indicating a successful login. Using the recovered credentials, authentication succeeded and the account page loaded, confirming the lab was solved.
 
-![Lab solved confirmation](images/Screenshot From 2026-07-12 23-14-54.png)
+![Lab solved confirmation](images/img6.png)
 
 ---
 
