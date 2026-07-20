@@ -5,7 +5,7 @@
 **Difficulty:** Apprentice
 **Platform:** PortSwigger Web Security Academy
 
-![Login and reset entry point](images/img2.png)
+![Login and reset entry point](images/img1.png)
 
 ---
 
