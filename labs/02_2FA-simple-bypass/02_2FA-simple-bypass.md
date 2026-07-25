@@ -1,8 +1,11 @@
 # 2FA Simple Bypass
 
 **Lab:** 2FA simple bypass
+
 **Category:** Authentication
+
 **Difficulty:** Apprentice
+
 **Platform:** PortSwigger Web Security Academy
 
 ---
