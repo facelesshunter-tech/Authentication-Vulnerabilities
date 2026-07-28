@@ -1,8 +1,11 @@
 # Broken Brute-Force Protection, IP Block
 
-**Lab:** Broken brute-force protection, IP block
+**Lab:** Broken brute-force protection, IP block 
+
 **Category:** Authentication
+
 **Difficulty:** Practitioner
+
 **Platform:** PortSwigger Web Security Academy
 
 ![Login page](images/intro.png)
