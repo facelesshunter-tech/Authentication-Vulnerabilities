@@ -1,8 +1,11 @@
 # 2FA Simple Bypass
 
 **Lab:** 2FA simple bypass
+
 **Category:** Authentication
+
 **Difficulty:** Apprentice
+
 **Platform:** PortSwigger Web Security Academy
 
 ---
@@ -60,7 +63,7 @@ After submitting valid credentials, the application presented a second step requ
 Completing the 2FA step with the `wiener` account led to the account page. The URL of this page was observed to be:
 
 ```
-/my-account?id=peter
+/my-account?id=wiener
 ```
 
 This revealed that the account page is a distinct endpoint that takes the username as a parameter, separate from the login and 2FA steps.
